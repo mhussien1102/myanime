@@ -1,0 +1,229 @@
+:root {
+    --main-color: #19c8fa;
+    --trans-color: rgb(15 116 174 / 65%)
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* start nav  */
+.navbar .cointer {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: unset;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: cyan;
+}
+
+.Cointinues_Animes {
+    color: #ddd;
+    border-bottom: 1px solid #ddd;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.navbar .fa-search {
+    width: 50px;
+    color: white;
+    border-left: 1px solid white;
+    padding-left: 20px;
+}
+
+.navbar i:hover {
+    color: var(--main-color);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cointer .menu {
+    color: white;
+    font-size: 22px;
+    margin-left: 50px;
+}
+
+@media(min-width:770px) {
+    .cointer .menu {
+        display: none;
+    }
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+@media (max-width:770px) {
+    ul li {
+        display: none;
+    }
+
+    ul+li:hover {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        background-color: rgb(0, 0, 0 / 50%);
+        width: 100%;
+    }
+}
+
+h1 {
+    color: white;
+
+}
+
+h1:hover {
+    color: yellow;
+    cursor: pointer;
+}
+
+li {
+    margin-left: 20px;
+    padding-top: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: blue
+}
+
+a:hover {
+    color: #ddd;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+/* end nav */
+/* stat main */
+.main .cointiner {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.main p {
+    margin-left: 30px;
+    background-color: lightslategrey;
+    width: fit-content;
+    color: white;
+}
+
+.main p:hover {
+    transform: skew(20deg);
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -ms-transform: skew(20deg);
+    -o-transform: skew(20deg);
+}
+
+img {
+    height: 300px;
+    width: 150px;
+    margin: 10px;
+    width: 300px;
+}
+
+.main a {
+    text-decoration: none;
+    display: block;
+    margin-left: 30px;
+}
+
+.main .onel {
+    margin-top: 10px;
+    background-color: red;
+    width: 75px;
+    height: 20px;
+    color: white;
+    text-align: center
+}
+
+.main .twol {
+    margin-top: 10px;
+    background-color: green;
+    width: 100px;
+    height: 20px;
+    color: white;
+    text-align: center
+}
+
+img:hover {
+    border: 10px solid red;
+}
+
+.one_piece {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.boruto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Jujutsu_Kaisen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Detective_Conan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Mushoku_Tensei {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* end main  */
+/* start footer  */
+.footer .cointiner {
+    background-color: teal;
+    text-align: center;
+    margin-top: 25px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fa-linkedin {
+    margin-inline: 10px;
+}
+
+.fa-twitter {
+    margin-inline: 10px;
+}
+
+i {
+    color: white;
+}
+
+span {
+    color: white;
+}
+
+.footer p:first-child {
+    color: white;
+}
+
+/* end footer  */
